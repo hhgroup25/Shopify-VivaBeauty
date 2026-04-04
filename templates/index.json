@@ -1,1 +1,616 @@
-{"sections":{"custom_liquid_EE9tw8":{"type":"custom-liquid","name":"t:sections.custom-liquid.presets.name","settings":{"custom_liquid":"<div class=\"vv-banner-carousel\">\n  <div class=\"vv-banner-track\">\n    \n    <!-- SLIDE 1 - NOVO -->\n    <div class=\"vv-banner-slide active\">\n      <a href=\"https:\/\/www.vivabeauty.com.br\/collections\/kits-semana-da-mulher\">\n        <picture>\n          <!-- MOBILE -->\n          <source\n            srcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0754\/9019\/7721\/files\/Banner_Semana_da_Mulher_-_Mobile_3.png?v=1773356593\"\n            media=\"(max-width: 768px)\"\n          >\n          <!-- DESKTOP -->\n          <img\n            src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0754\/9019\/7721\/files\/Banner_Semana_da_Mulher_-_Desktop_5.png?v=1773356773\"Mês Consumidor\"\n            class=\"vv-banner-img\"\n            loading=\"lazy\"\n          >\n        <\/picture>\n      <\/a>\n    <\/div>\n\n    <!-- SLIDE 2 - ANTIGO -->\n    <div class=\"vv-banner-slide\">\n      <a href=\"https:\/\/www.vivabeauty.com.br\/products\/skin-complex-plus\" class=\"vv-banner-link\">\n        <picture>\n          <!-- MOBILE -->\n          <source\n            srcset=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0754\/9019\/7721\/files\/Viva_Beauty-Fullbanner_Mobile_1080x1350_d0d4d552-5886-4e7d-8508-902d97ba4c77.png?v=1772222683\"\n            media=\"(max-width: 768px)\"\n          >\n          <!-- DESKTOP -->\n          <img\n            src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0754\/9019\/7721\/files\/Viva_Beauty-Fullbanner_Desktop_1920x610_7bcb1a1b-6348-4f11-b404-6952b4335c55.png?v=1772222682\"\n            alt=\"Banner Promocional\"\n            class=\"vv-banner-img\"\n            loading=\"lazy\"\n          >\n        <\/picture>\n      <\/a>\n    <\/div>\n\n  <\/div>\n\n  <div class=\"vv-banner-dots\">\n    <button class=\"vv-banner-dot active\"><\/button>\n    <button class=\"vv-banner-dot\"><\/button>\n  <\/div>\n<\/div>\n\n<style>\n  .vv-banner-carousel{\n    position:relative;\n    width:100%;\n    overflow:hidden;\n  }\n\n  .vv-banner-track{\n    position:relative;\n    width:100%;\n  }\n\n  .vv-banner-slide{\n    display:none;\n    width:100%;\n  }\n\n  .vv-banner-slide.active{\n    display:block;\n  }\n\n  .vv-banner-link{\n    display:block;\n    width:100%;\n  }\n\n  .vv-banner-img{\n    width:100%;\n    height:auto;\n    display:block;\n    border-radius:0;\n  }\n\n  .shopify-section{\n    overflow:hidden;\n  }\n\n  .vv-banner-dots{\n    position:absolute;\n    left:50%;\n    bottom:14px;\n    transform:translateX(-50%);\n    display:flex;\n    gap:8px;\n    z-index:3;\n  }\n\n  .vv-banner-dot{\n    width:10px;\n    height:10px;\n    border-radius:50%;\n    border:none;\n    background:rgba(255,255,255,.5);\n    cursor:pointer;\n    padding:0;\n  }\n\n  .vv-banner-dot.active{\n    background:#fff;\n  }\n\n  @media (max-width:768px){\n    .vv-banner-img{\n      width:100%;\n      height:auto;\n    }\n  }\n<\/style>\n\n<script>\n  (function() {\n    const carousel = document.querySelector('.vv-banner-carousel');\n    if (!carousel) return;\n\n    const slides = carousel.querySelectorAll('.vv-banner-slide');\n    const dots = carousel.querySelectorAll('.vv-banner-dot');\n\n    let current = 0;\n    let autoPlay;\n\n    function showSlide(index) {\n      slides.forEach((slide, i) => {\n        slide.classList.toggle('active', i === index);\n      });\n\n      dots.forEach((dot, i) => {\n        dot.classList.toggle('active', i === index);\n      });\n\n      current = index;\n    }\n\n    function nextSlide() {\n      let next = current + 1;\n      if (next >= slides.length) next = 0;\n      showSlide(next);\n    }\n\n    function startAutoPlay() {\n      autoPlay = setInterval(nextSlide, 5000);\n    }\n\n    dots.forEach((dot, index) => {\n      dot.addEventListener('click', function() {\n        showSlide(index);\n      });\n    });\n\n    showSlide(0);\n    startAutoPlay();\n  })();\n<\/script>","color_scheme":"","padding_top":0,"padding_bottom":0,"custom_class":""}},"slideshow_zTjT8g":{"type":"slideshow","blocks":{"slide_AaPzXY":{"type":"slide","settings":{"color_scheme":"","background":"shopify:\/\/shop_images\/Viva_Beauty-Fullbanner_Desktop_1920x610_7bcb1a1b-6348-4f11-b404-6952b4335c55.png","background_mobile":"shopify:\/\/shop_images\/Viva_Beauty-Fullbanner_Mobile_1080x1350_d0d4d552-5886-4e7d-8508-902d97ba4c77.png","image_overlay_opacity":0,"show_content_in_container":true,"content_position":"middle-center","content_position_mobile":"middle-center","text_alignment":"center","title":"","heading_size":"hd1","subheading":"","description":"","description_size":"text-base","button_label":"","button_link":"https:\/\/www.vivabeauty.com.br\/collections\/colageno","button_style":"btn--underline"}},"slide_3ArR9y":{"type":"slide","settings":{"color_scheme":"","background":"shopify:\/\/shop_images\/Banner_Consumidor_-_Desktop_5.png","background_mobile":"shopify:\/\/shop_images\/Banner_Semana_da_Mulher_-_Mobile_3.png","image_overlay_opacity":0,"show_content_in_container":true,"content_position":"middle-center","content_position_mobile":"middle-center","text_alignment":"center","title":"","heading_size":"hd1","subheading":"","description":"","description_size":"text-base","button_label":"","button_link":"https:\/\/www.vivabeauty.com.br\/collections\/kits-viva-beauty-mes-consumidor","button_style":"btn--primary"}},"slide_c3bpAG":{"type":"slide","settings":{"color_scheme":"","background":"shopify:\/\/shop_images\/Viva-Beauty-Home-Banner-Atualizacao-Desktop-Creatina.jpg","background_mobile":"shopify:\/\/shop_images\/WhatsApp_Image_2026-02-27_at_16.17.36.jpg","image_overlay_opacity":0,"show_content_in_container":true,"content_position":"middle-center","content_position_mobile":"middle-center","text_alignment":"center","title":"","heading_size":"hd1","subheading":"","description":"","description_size":"text-base","button_label":"","button_link":"https:\/\/www.vivabeauty.com.br\/collections\/creatina","button_style":"btn--primary"}}},"block_order":["slide_AaPzXY","slide_3ArR9y","slide_c3bpAG"],"disabled":true,"custom_css":[],"name":"t:sections.slideshow.name","settings":{"container":"full","layout":"standard","slide_height":"adapt","show_dots":true,"autoplay":false,"autoplay_delay":2,"controls_position":"bottom","show_text_below":false,"text_alignment_mobile":"center","accessibility_info":"","custom_class":""}},"feature_list_cW3d9c":{"type":"feature-list","blocks":{"feature_item_FdB8KC":{"type":"feature_item","settings":{"color_scheme":"scheme-11","icon":"check","icon_style":"btn--secondary","text":"30 Doses"}},"feature_item_VbCwL3":{"type":"feature_item","settings":{"color_scheme":"scheme-11","icon":"check","icon_style":"btn--secondary","text":"3x Mais Ácido Hialurônico"}},"feature_item_Ja7CUb":{"type":"feature_item","settings":{"color_scheme":"scheme-11","icon":"check","icon_style":"btn--secondary","text":"Silício Orgânico"}},"feature_item_ARhQU8":{"type":"feature_item","settings":{"color_scheme":"scheme-11","icon":"check","icon_style":"btn--secondary","text":"Pele Mais Jovem"}},"feature_item_ELPbtz":{"type":"feature_item","settings":{"color_scheme":"scheme-11","icon":"check","icon_style":"btn--secondary","text":"Fortalece Unhas"}},"feature_item_ADKFdX":{"type":"feature_item","settings":{"color_scheme":"scheme-11","icon":"check","icon_style":"btn--secondary","text":"Fortalece Cabelos"}}},"block_order":["feature_item_FdB8KC","feature_item_VbCwL3","feature_item_Ja7CUb","feature_item_ARhQU8","feature_item_ELPbtz","feature_item_ADKFdX"],"custom_css":["@media (max-width: 767px) {.swipe-mobile .feature-item__text {text-wrap: nowrap; }}"],"settings":{"color_scheme":"scheme-7","subheading":"","heading":"","heading_size":"h6","heading_highlight_style":"none","description":"","text_size":"text-base","item_alignment":"center","icon_size":"extra-medium","swipe_on_mobile":true,"padding_top":50,"padding_bottom":0,"show_section_divider":false,"divider_width":"fixed","custom_class":""}},"featured_collection_mA8fzX":{"type":"featured-collection","name":"Featured collection","settings":{"color_scheme":"","header_layout":"vertical","heading":"Mês do Consumidor","heading_size":"h1","heading_highlight_style":"none","subheading":"","description":"","text_size":"text-base","show_collection_description":false,"collection":"kits-viva-beauty-mes-consumidor","limit":8,"columns":4,"column_gap":"medium","row_gap":"inherit","grid_layout":"standard","enable_slider":true,"controls_position":"inside","pcard_image_ratio":"","columns_mobile":"1","swipe_on_mobile":true,"show_all_button_on_top":false,"button_label":"","button_style":"btn--primary","padding_top":50,"padding_bottom":50,"show_section_divider":false,"divider_width":"fixed","custom_class":""}},"featured_collection_gfrVf9":{"type":"featured-collection","custom_css":[],"name":"t:sections.featured-collection.presets.name","settings":{"color_scheme":"scheme-1","header_layout":"vertical","heading":"Colágeno","heading_size":"h1","heading_highlight_style":"none","subheading":"","description":"","text_size":"text-base","show_collection_description":false,"collection":"kits","limit":8,"columns":3,"column_gap":"medium","row_gap":"inherit","grid_layout":"standard","enable_slider":true,"controls_position":"inside","pcard_image_ratio":"","columns_mobile":"1","swipe_on_mobile":true,"show_all_button_on_top":false,"button_label":"","button_style":"btn--primary","padding_top":50,"padding_bottom":50,"show_section_divider":false,"divider_width":"fixed","custom_class":""}},"featured_collection_EMDUAK":{"type":"featured-collection","custom_css":[],"name":"t:sections.featured-collection.presets.name","settings":{"color_scheme":"scheme-1","header_layout":"vertical","heading":"","heading_size":"h1","heading_highlight_style":"none","subheading":"","description":"","text_size":"text-base","show_collection_description":false,"collection":"colageno","limit":8,"columns":3,"column_gap":"medium","row_gap":"inherit","grid_layout":"standard","enable_slider":true,"controls_position":"inside","pcard_image_ratio":"","columns_mobile":"1","swipe_on_mobile":true,"show_all_button_on_top":false,"button_label":"","button_style":"btn--primary","padding_top":50,"padding_bottom":50,"show_section_divider":false,"divider_width":"fixed","custom_class":""}},"custom_liquid_dqg8W8":{"type":"custom-liquid","name":"t:sections.custom-liquid.presets.name","settings":{"custom_liquid":"<section class=\"vv-strip\">\n  <div class=\"vv-strip__inner\">\n    <div class=\"vv-strip__scroller\" aria-label=\"Vídeos\" role=\"region\">\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/78fa28795fed46f6ae9a80242788d5d7.mp4\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/41506eba890349a1a70189a5fb440e44.mov\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c24b893a73254718bd048c5ccfb73663.mov\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8fbc0ff83cc14427a4ba3206b021deac.mov\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/1969083550e74781ba36bba00048fcbc.mov\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n    <\/div>\n  <\/div>\n<\/section>\n\n<style>\n  .vv-strip{\n    padding:14px 0;\n  }\n\n  \/* margem lateral da seção *\/\n  .vv-strip__inner{\n    max-width:1200px;\n    margin:0 auto;\n    padding:0 16px;\n  }\n\n  \/* carrossel horizontal *\/\n  .vv-strip__scroller{\n    display:flex;\n    gap:16px;\n    overflow-x:auto;\n    -webkit-overflow-scrolling:touch;\n    scroll-snap-type:x mandatory;\n    padding-bottom:10px;\n\n    \/* remove barra *\/\n    scrollbar-width:none;\n  }\n  .vv-strip__scroller::-webkit-scrollbar{\n    display:none;\n  }\n\n  .vv-card{\n    flex:0 0 auto;\n    width:min(260px,78vw);\n    border-radius:14px;\n    overflow:hidden;\n    background:#000;\n    box-shadow:0 12px 22px rgba(0,0,0,.12);\n    scroll-snap-align:start;\n  }\n\n  \/* vídeo tamanho original *\/\n  .vv-video{\n    width:100%;\n    height:auto;\n    display:block;\n    object-fit:contain;\n    background:#000;\n  }\n\n  @media (min-width:990px){\n    .vv-strip__inner{\n      padding:0 24px;\n    }\n    .vv-card{\n      width:280px;\n    }\n  }\n<\/style>","color_scheme":"","padding_top":50,"padding_bottom":50,"custom_class":""}},"featured_collection_DQEXXL":{"type":"featured-collection","name":"t:sections.featured-collection.presets.name","settings":{"color_scheme":"","header_layout":"vertical","heading":"Creatina","heading_size":"h1","heading_highlight_style":"none","subheading":"","description":"","text_size":"text-base","show_collection_description":false,"collection":"kits-creatinas","limit":8,"columns":4,"column_gap":"medium","row_gap":"inherit","grid_layout":"standard","enable_slider":true,"controls_position":"inside","pcard_image_ratio":"","columns_mobile":"1","swipe_on_mobile":true,"show_all_button_on_top":false,"button_label":"","button_style":"btn--primary","padding_top":50,"padding_bottom":50,"show_section_divider":false,"divider_width":"fixed","custom_class":""}},"featured_collection_fmDfkR":{"type":"featured-collection","name":"t:sections.featured-collection.presets.name","settings":{"color_scheme":"scheme-green-button","header_layout":"vertical","heading":"","heading_size":"h1","heading_highlight_style":"none","subheading":"","description":"","text_size":"text-base","show_collection_description":false,"collection":"creatina","limit":8,"columns":3,"column_gap":"medium","row_gap":"inherit","grid_layout":"standard","enable_slider":true,"controls_position":"inside","pcard_image_ratio":"","columns_mobile":"1","swipe_on_mobile":true,"show_all_button_on_top":false,"button_label":"","button_style":"btn--primary","padding_top":50,"padding_bottom":50,"show_section_divider":false,"divider_width":"fixed","custom_class":""}},"custom_liquid_YrfUzk":{"type":"custom-liquid","name":"t:sections.custom-liquid.presets.name","settings":{"custom_liquid":"<section class=\"vv-strip\">\n  <div class=\"vv-strip__inner\">\n    <div class=\"vv-strip__scroller\" aria-label=\"Vídeos\" role=\"region\">\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/fa168b09e7d346e9824d022a524f94fc.mp4\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7fce215817e4411bbd5be99f4898da08.mp4\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d25c10381e5949b3840adbc4af30b98e.mp4\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c071c4170d354dccacd3bcd4b9ab6b7e.mp4\">\n        <\/video>\n      <\/div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/1969083550e74781ba36bba00048fcbc.mov\" type=\"video\/mp4\">\n        <\/video>\n      <\/div>\n\n    <\/div>\n  <\/div>\n<\/section>\n\n<style>\n  .vv-strip{\n    padding:14px 0;\n  }\n\n  \/* margem lateral da seção *\/\n  .vv-strip__inner{\n    max-width:1200px;\n    margin:0 auto;\n    padding:0 16px;\n  }\n\n  \/* carrossel horizontal *\/\n  .vv-strip__scroller{\n    display:flex;\n    gap:16px;\n    overflow-x:auto;\n    -webkit-overflow-scrolling:touch;\n    scroll-snap-type:x mandatory;\n    padding-bottom:10px;\n\n    \/* remove barra *\/\n    scrollbar-width:none;\n  }\n  .vv-strip__scroller::-webkit-scrollbar{\n    display:none;\n  }\n\n  .vv-card{\n    flex:0 0 auto;\n    width:min(260px,78vw);\n    border-radius:14px;\n    overflow:hidden;\n    background:#000;\n    box-shadow:0 12px 22px rgba(0,0,0,.12);\n    scroll-snap-align:start;\n  }\n\n  \/* vídeo tamanho original *\/\n  .vv-video{\n    width:100%;\n    height:auto;\n    display:block;\n    object-fit:contain;\n    background:#000;\n  }\n\n  @media (min-width:990px){\n    .vv-strip__inner{\n      padding:0 24px;\n    }\n    .vv-card{\n      width:280px;\n    }\n  }\n<\/style>","color_scheme":"","padding_top":50,"padding_bottom":50,"custom_class":""}},"featured_collection_CtQ6MB":{"type":"featured-collection","name":"t:sections.featured-collection.presets.name","settings":{"color_scheme":"scheme-green-button","header_layout":"vertical","heading":"Skin Care","heading_size":"h1","heading_highlight_style":"none","subheading":"","description":"","text_size":"text-base","show_collection_description":false,"collection":"skin-care","limit":8,"columns":3,"column_gap":"medium","row_gap":"inherit","grid_layout":"standard","enable_slider":true,"controls_position":"inside","pcard_image_ratio":"","columns_mobile":"1","swipe_on_mobile":true,"show_all_button_on_top":false,"button_label":"","button_style":"btn--primary","padding_top":50,"padding_bottom":50,"show_section_divider":false,"divider_width":"fixed","custom_class":""}},"collapsible_tabs_KNKLiF":{"type":"collapsible-tabs","blocks":{"collapsible_item_t7UtgE":{"type":"collapsible_item","settings":{"icon":"none","heading":"Existe alguma contraindicação ou efeito colateral?","content":"<p>O colágeno Skin Complex PLUS é um suplemento alimentar em pó produzido com ingredientes 100% naturais e não causa efeitos colaterais, porém, por possuir o ácido hialurônico na fórmula, gestantes, lactantes e crianças devem consultar um médico para avaliação da possibilidade de consumo antes da compra. Não iniciar o consumo do produto antes de um parecer profissional.<\/p>","custom_liquid":"","page":"","open":true}},"collapsible_item_AMx7Wd":{"type":"collapsible_item","settings":{"icon":"none","heading":"Em quanto tempo os resultados são visíveis?","content":"<p>Os resultados são visíveis a partir de 8 semanas de uso do Viva Beauty, mas começam a ser notados a partir de 4 semanas. Disponibilizamos estudos do Verisol que comprovam os resultado.<\/p>","custom_liquid":"","page":"","open":false}},"collapsible_item_rUAHxc":{"type":"collapsible_item","settings":{"icon":"none","heading":"Os ingredientes são naturais?","content":"<p>Sim, como diferencial priorizamos sempre a qualidade e principalmente pensamos na sua saúde em longo prazo. Por isso não utilizamos corantes artificiais, malto e nem conservantes!<\/p>","custom_liquid":"","page":"","open":false}},"collapsible_item_JCwmkt":{"type":"collapsible_item","settings":{"icon":"none","heading":"Qual o prazo de entrega?","content":"<p>O Viva Beauty é despachado em média de 24h úteis após aprovação do pagamento.<\/p><p><strong>Segue prazo médio para entrega:<\/strong><\/p><ul><li>Região Sudeste - de 1 a 8 dias úteis<\/li><li>Região Sul - de 1 a 9 dias úteis<\/li><li>Região Centro-Oeste - de 1 a 10 dias úteis<\/li><li>Região Nordeste - de 2 a 14 dias úteis<\/li><li>Região Norte - de 3 a 15 dias úteis<\/li><\/ul>","custom_liquid":"","page":"","open":false}},"collapsible_item_pB6T8V":{"type":"collapsible_item","settings":{"icon":"none","heading":"Políticas de frete grátis","content":"<p>O FRETE GRÁTIS é válido apenas para pedidos acima de R$ 199,00 para os demais, será cobrado o valor fixo de R$ 9,90 para qualquer região do país.<br\/><br\/><\/p>","custom_liquid":"","page":"","open":false}}},"block_order":["collapsible_item_t7UtgE","collapsible_item_AMx7Wd","collapsible_item_rUAHxc","collapsible_item_JCwmkt","collapsible_item_pB6T8V"],"custom_css":[],"settings":{"container":"fixed","color_scheme":"scheme-9","header_layout":"vertical","heading":"Dúvidas Frequentes","heading_size":"h2","heading_highlight_style":"none","subheading":"","description":"","text_size":"text-base","button_label":"","button_link":"","button_style":"btn--primary","column_gap":"large","row_gap":"large","item_style":"card","item_color_scheme":"scheme-1","item_heading_font":"heading","item_heading_size":"h5","item_icon_size":"extra-large","padding_top":60,"padding_bottom":100,"show_section_divider":false,"divider_width":"fixed","custom_class":""}},"multicolumn_kigFqr":{"type":"multicolumn","blocks":{"column_4XWnrK":{"type":"column","settings":{"show_image":true,"image":"shopify:\/\/shop_images\/Captura_de_tela_2025-07-11_082831.png","image_width":"full","title":"","heading_size":"h6","text":"<p>A suplementação com colágeno é uma ótima forma de se cuidar! Apesar de ser uma proteína essencial amplamente...<\/p>","text_size":"text-base","button_label":"Saiba Mais","button_style":"btn--underline","button_link":"shopify:\/\/blogs\/news\/saiba-o-que-considerar-antes-de-comprar-colageno","mobile_layout":"inherit"}},"column_GiUkLN":{"type":"column","settings":{"show_image":true,"image":"shopify:\/\/shop_images\/Captura_de_tela_2025-07-11_083112.png","image_width":"full","title":"","heading_size":"h6","text":"<p>Você provavelmente já ouviu falar dos inúmeros benefícios do colágeno para a saúde do corpo, afinal, é uma proteína...<\/p>","text_size":"text-base","button_label":"Saiba Mais","button_style":"btn--underline","button_link":"shopify:\/\/blogs\/news\/existe-forma-correta-de-tomar-colageno-saiba-tudo","mobile_layout":"inherit"}},"column_najziB":{"type":"column","settings":{"show_image":true,"image":"shopify:\/\/shop_images\/Captura_de_tela_2025-07-11_083809.png","image_width":"full","title":"","heading_size":"h6","text":"<p>Os cuidados com a saúde da pele fazem parte da rotina de muitas pessoas que desejam manter a beleza e o bem-estar em...<\/p>","text_size":"text-base","button_label":"Saiba Mais","button_style":"btn--underline","button_link":"shopify:\/\/blogs\/news\/colageno-com-sabor-mais-saude-para-o-seu-paladar","mobile_layout":"inherit"}}},"block_order":["column_4XWnrK","column_GiUkLN","column_najziB"],"disabled":true,"name":"t:sections.multicolumn.presets.name","settings":{"color_scheme":"","heading":"","heading_size":"h1","heading_highlight_style":"none","subheading":"","description":"","text_size":"text-base","column_alignment":"left","columns_desktop":3,"column_gap":"large","columns_mobile":"1","swipe_on_mobile":true,"padding_top":50,"padding_bottom":50,"show_section_divider":false,"divider_width":"fixed","custom_class":""}}},"order":["custom_liquid_EE9tw8","slideshow_zTjT8g","feature_list_cW3d9c","featured_collection_mA8fzX","featured_collection_gfrVf9","featured_collection_EMDUAK","custom_liquid_dqg8W8","featured_collection_DQEXXL","featured_collection_fmDfkR","custom_liquid_YrfUzk","featured_collection_CtQ6MB","collapsible_tabs_KNKLiF","multicolumn_kigFqr"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_EE9tw8": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"vv-banner-carousel\">\n  <div class=\"vv-banner-track\">\n    \n    <!-- SLIDE 1 - NOVO -->\n    <div class=\"vv-banner-slide active\">\n      <a href=\"https://www.vivabeauty.com.br/collections/kits-semana-da-mulher\">\n        <picture>\n          <!-- MOBILE -->\n          <source\n            srcset=\"https://cdn.shopify.com/s/files/1/0754/9019/7721/files/Banner_Semana_da_Mulher_-_Mobile_3.png?v=1773356593\"\n            media=\"(max-width: 768px)\"\n          >\n          <!-- DESKTOP -->\n          <img\n            src=\"https://cdn.shopify.com/s/files/1/0754/9019/7721/files/Banner_Semana_da_Mulher_-_Desktop_5.png?v=1773356773\"Mês Consumidor\"\n            class=\"vv-banner-img\"\n            loading=\"lazy\"\n          >\n        </picture>\n      </a>\n    </div>\n\n    <!-- SLIDE 2 - ANTIGO -->\n    <div class=\"vv-banner-slide\">\n      <a href=\"https://www.vivabeauty.com.br/products/skin-complex-plus\" class=\"vv-banner-link\">\n        <picture>\n          <!-- MOBILE -->\n          <source\n            srcset=\"https://cdn.shopify.com/s/files/1/0754/9019/7721/files/Viva_Beauty-Fullbanner_Mobile_1080x1350_d0d4d552-5886-4e7d-8508-902d97ba4c77.png?v=1772222683\"\n            media=\"(max-width: 768px)\"\n          >\n          <!-- DESKTOP -->\n          <img\n            src=\"https://cdn.shopify.com/s/files/1/0754/9019/7721/files/Viva_Beauty-Fullbanner_Desktop_1920x610_7bcb1a1b-6348-4f11-b404-6952b4335c55.png?v=1772222682\"\n            alt=\"Banner Promocional\"\n            class=\"vv-banner-img\"\n            loading=\"lazy\"\n          >\n        </picture>\n      </a>\n    </div>\n\n  </div>\n\n  <div class=\"vv-banner-dots\">\n    <button class=\"vv-banner-dot active\"></button>\n    <button class=\"vv-banner-dot\"></button>\n  </div>\n</div>\n\n<style>\n  .vv-banner-carousel{\n    position:relative;\n    width:100%;\n    overflow:hidden;\n  }\n\n  .vv-banner-track{\n    position:relative;\n    width:100%;\n  }\n\n  .vv-banner-slide{\n    display:none;\n    width:100%;\n  }\n\n  .vv-banner-slide.active{\n    display:block;\n  }\n\n  .vv-banner-link{\n    display:block;\n    width:100%;\n  }\n\n  .vv-banner-img{\n    width:100%;\n    height:auto;\n    display:block;\n    border-radius:0;\n  }\n\n  .shopify-section{\n    overflow:hidden;\n  }\n\n  .vv-banner-dots{\n    position:absolute;\n    left:50%;\n    bottom:14px;\n    transform:translateX(-50%);\n    display:flex;\n    gap:8px;\n    z-index:3;\n  }\n\n  .vv-banner-dot{\n    width:10px;\n    height:10px;\n    border-radius:50%;\n    border:none;\n    background:rgba(255,255,255,.5);\n    cursor:pointer;\n    padding:0;\n  }\n\n  .vv-banner-dot.active{\n    background:#fff;\n  }\n\n  @media (max-width:768px){\n    .vv-banner-img{\n      width:100%;\n      height:auto;\n    }\n  }\n</style>\n\n<script>\n  (function() {\n    const carousel = document.querySelector('.vv-banner-carousel');\n    if (!carousel) return;\n\n    const slides = carousel.querySelectorAll('.vv-banner-slide');\n    const dots = carousel.querySelectorAll('.vv-banner-dot');\n\n    let current = 0;\n    let autoPlay;\n\n    function showSlide(index) {\n      slides.forEach((slide, i) => {\n        slide.classList.toggle('active', i === index);\n      });\n\n      dots.forEach((dot, i) => {\n        dot.classList.toggle('active', i === index);\n      });\n\n      current = index;\n    }\n\n    function nextSlide() {\n      let next = current + 1;\n      if (next >= slides.length) next = 0;\n      showSlide(next);\n    }\n\n    function startAutoPlay() {\n      autoPlay = setInterval(nextSlide, 5000);\n    }\n\n    dots.forEach((dot, index) => {\n      dot.addEventListener('click', function() {\n        showSlide(index);\n      });\n    });\n\n    showSlide(0);\n    startAutoPlay();\n  })();\n</script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "slideshow_zTjT8g": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_AaPzXY": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "background": "shopify://shop_images/Viva_Beauty-Fullbanner_Desktop_1920x610_7bcb1a1b-6348-4f11-b404-6952b4335c55.png",
+            "background_mobile": "shopify://shop_images/Viva_Beauty-Fullbanner_Mobile_1080x1350_d0d4d552-5886-4e7d-8508-902d97ba4c77.png",
+            "image_overlay_opacity": 0,
+            "show_content_in_container": true,
+            "content_position": "middle-center",
+            "content_position_mobile": "middle-center",
+            "text_alignment": "center",
+            "title": "",
+            "heading_size": "hd1",
+            "subheading": "",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "https://www.vivabeauty.com.br/collections/colageno",
+            "button_style": "btn--underline"
+          }
+        },
+        "slide_3ArR9y": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "background": "shopify://shop_images/Banner_Consumidor_-_Desktop_5.png",
+            "background_mobile": "shopify://shop_images/Banner_Semana_da_Mulher_-_Mobile_3.png",
+            "image_overlay_opacity": 0,
+            "show_content_in_container": true,
+            "content_position": "middle-center",
+            "content_position_mobile": "middle-center",
+            "text_alignment": "center",
+            "title": "",
+            "heading_size": "hd1",
+            "subheading": "",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "https://www.vivabeauty.com.br/collections/kits-viva-beauty-mes-consumidor",
+            "button_style": "btn--primary"
+          }
+        },
+        "slide_c3bpAG": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "background": "shopify://shop_images/Viva-Beauty-Home-Banner-Atualizacao-Desktop-Creatina.jpg",
+            "background_mobile": "shopify://shop_images/WhatsApp_Image_2026-02-27_at_16.17.36.jpg",
+            "image_overlay_opacity": 0,
+            "show_content_in_container": true,
+            "content_position": "middle-center",
+            "content_position_mobile": "middle-center",
+            "text_alignment": "center",
+            "title": "",
+            "heading_size": "hd1",
+            "subheading": "",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "https://www.vivabeauty.com.br/collections/creatina",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_AaPzXY",
+        "slide_3ArR9y",
+        "slide_c3bpAG"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "container": "full",
+        "layout": "standard",
+        "slide_height": "adapt",
+        "show_dots": true,
+        "autoplay": false,
+        "autoplay_delay": 2,
+        "controls_position": "bottom",
+        "show_text_below": false,
+        "text_alignment_mobile": "center",
+        "accessibility_info": "",
+        "custom_class": ""
+      }
+    },
+    "feature_list_cW3d9c": {
+      "type": "feature-list",
+      "blocks": {
+        "feature_item_FdB8KC": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "scheme-11",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "30 Doses"
+          }
+        },
+        "feature_item_VbCwL3": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "scheme-11",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "3x Mais Ácido Hialurônico"
+          }
+        },
+        "feature_item_Ja7CUb": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "scheme-11",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Silício Orgânico"
+          }
+        },
+        "feature_item_ARhQU8": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "scheme-11",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Pele Mais Jovem"
+          }
+        },
+        "feature_item_ELPbtz": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "scheme-11",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Fortalece Unhas"
+          }
+        },
+        "feature_item_ADKFdX": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "scheme-11",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Fortalece Cabelos"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_FdB8KC",
+        "feature_item_VbCwL3",
+        "feature_item_Ja7CUb",
+        "feature_item_ARhQU8",
+        "feature_item_ELPbtz",
+        "feature_item_ADKFdX"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.swipe-mobile .feature-item__text {text-wrap: nowrap; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-7",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h6",
+        "heading_highlight_style": "none",
+        "description": "",
+        "text_size": "text-base",
+        "item_alignment": "center",
+        "icon_size": "extra-medium",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "featured_collection_mA8fzX": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "heading": "Mês do Consumidor",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "show_collection_description": false,
+        "collection": "kits-viva-beauty",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "enable_slider": true,
+        "controls_position": "inside",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "featured_collection_gfrVf9": {
+      "type": "featured-collection",
+      "custom_css": [],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "header_layout": "vertical",
+        "heading": "Colágeno",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "show_collection_description": false,
+        "collection": "kits",
+        "limit": 8,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "enable_slider": true,
+        "controls_position": "inside",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "featured_collection_EMDUAK": {
+      "type": "featured-collection",
+      "custom_css": [],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "header_layout": "vertical",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "show_collection_description": false,
+        "collection": "colageno",
+        "limit": 8,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "enable_slider": true,
+        "controls_position": "inside",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_dqg8W8": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<section class=\"vv-strip\">\n  <div class=\"vv-strip__inner\">\n    <div class=\"vv-strip__scroller\" aria-label=\"Vídeos\" role=\"region\">\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/78fa28795fed46f6ae9a80242788d5d7.mp4\" type=\"video/mp4\">\n        </video>\n      </div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/41506eba890349a1a70189a5fb440e44.mov\" type=\"video/mp4\">\n        </video>\n      </div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/c24b893a73254718bd048c5ccfb73663.mov\" type=\"video/mp4\">\n        </video>\n      </div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/8fbc0ff83cc14427a4ba3206b021deac.mov\" type=\"video/mp4\">\n        </video>\n      </div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/1969083550e74781ba36bba00048fcbc.mov\" type=\"video/mp4\">\n        </video>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .vv-strip{\n    padding:14px 0;\n  }\n\n  /* margem lateral da seção */\n  .vv-strip__inner{\n    max-width:1200px;\n    margin:0 auto;\n    padding:0 16px;\n  }\n\n  /* carrossel horizontal */\n  .vv-strip__scroller{\n    display:flex;\n    gap:16px;\n    overflow-x:auto;\n    -webkit-overflow-scrolling:touch;\n    scroll-snap-type:x mandatory;\n    padding-bottom:10px;\n\n    /* remove barra */\n    scrollbar-width:none;\n  }\n  .vv-strip__scroller::-webkit-scrollbar{\n    display:none;\n  }\n\n  .vv-card{\n    flex:0 0 auto;\n    width:min(260px,78vw);\n    border-radius:14px;\n    overflow:hidden;\n    background:#000;\n    box-shadow:0 12px 22px rgba(0,0,0,.12);\n    scroll-snap-align:start;\n  }\n\n  /* vídeo tamanho original */\n  .vv-video{\n    width:100%;\n    height:auto;\n    display:block;\n    object-fit:contain;\n    background:#000;\n  }\n\n  @media (min-width:990px){\n    .vv-strip__inner{\n      padding:0 24px;\n    }\n    .vv-card{\n      width:280px;\n    }\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
+    },
+    "featured_collection_DQEXXL": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "heading": "Creatina",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "show_collection_description": false,
+        "collection": "kits-creatinas",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "enable_slider": true,
+        "controls_position": "inside",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "featured_collection_fmDfkR": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "color_scheme": "scheme-green-button",
+        "header_layout": "vertical",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "show_collection_description": false,
+        "collection": "creatina",
+        "limit": 8,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "enable_slider": true,
+        "controls_position": "inside",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "custom_liquid_YrfUzk": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<section class=\"vv-strip\">\n  <div class=\"vv-strip__inner\">\n    <div class=\"vv-strip__scroller\" aria-label=\"Vídeos\" role=\"region\">\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/fa168b09e7d346e9824d022a524f94fc.mp4\" type=\"video/mp4\">\n        </video>\n      </div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/7fce215817e4411bbd5be99f4898da08.mp4\" type=\"video/mp4\">\n        </video>\n      </div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/d25c10381e5949b3840adbc4af30b98e.mp4\" type=\"video/mp4\">\n        </video>\n      </div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/c071c4170d354dccacd3bcd4b9ab6b7e.mp4\">\n        </video>\n      </div>\n\n      <div class=\"vv-card\">\n        <video class=\"vv-video\" muted autoplay loop playsinline preload=\"metadata\" controls>\n          <source src=\"https://cdn.shopify.com/videos/c/o/v/1969083550e74781ba36bba00048fcbc.mov\" type=\"video/mp4\">\n        </video>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .vv-strip{\n    padding:14px 0;\n  }\n\n  /* margem lateral da seção */\n  .vv-strip__inner{\n    max-width:1200px;\n    margin:0 auto;\n    padding:0 16px;\n  }\n\n  /* carrossel horizontal */\n  .vv-strip__scroller{\n    display:flex;\n    gap:16px;\n    overflow-x:auto;\n    -webkit-overflow-scrolling:touch;\n    scroll-snap-type:x mandatory;\n    padding-bottom:10px;\n\n    /* remove barra */\n    scrollbar-width:none;\n  }\n  .vv-strip__scroller::-webkit-scrollbar{\n    display:none;\n  }\n\n  .vv-card{\n    flex:0 0 auto;\n    width:min(260px,78vw);\n    border-radius:14px;\n    overflow:hidden;\n    background:#000;\n    box-shadow:0 12px 22px rgba(0,0,0,.12);\n    scroll-snap-align:start;\n  }\n\n  /* vídeo tamanho original */\n  .vv-video{\n    width:100%;\n    height:auto;\n    display:block;\n    object-fit:contain;\n    background:#000;\n  }\n\n  @media (min-width:990px){\n    .vv-strip__inner{\n      padding:0 24px;\n    }\n    .vv-card{\n      width:280px;\n    }\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
+    },
+    "featured_collection_CtQ6MB": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "color_scheme": "scheme-green-button",
+        "header_layout": "vertical",
+        "heading": "Skin Care",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "show_collection_description": false,
+        "collection": "skin-care",
+        "limit": 8,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "enable_slider": true,
+        "controls_position": "inside",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "collapsible_tabs_KNKLiF": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "collapsible_item_t7UtgE": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Existe alguma contraindicação ou efeito colateral?",
+            "content": "<p>O colágeno Skin Complex PLUS é um suplemento alimentar em pó produzido com ingredientes 100% naturais e não causa efeitos colaterais, porém, por possuir o ácido hialurônico na fórmula, gestantes, lactantes e crianças devem consultar um médico para avaliação da possibilidade de consumo antes da compra. Não iniciar o consumo do produto antes de um parecer profissional.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": true
+          }
+        },
+        "collapsible_item_AMx7Wd": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Em quanto tempo os resultados são visíveis?",
+            "content": "<p>Os resultados são visíveis a partir de 8 semanas de uso do Viva Beauty, mas começam a ser notados a partir de 4 semanas. Disponibilizamos estudos do Verisol que comprovam os resultado.</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_item_rUAHxc": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Os ingredientes são naturais?",
+            "content": "<p>Sim, como diferencial priorizamos sempre a qualidade e principalmente pensamos na sua saúde em longo prazo. Por isso não utilizamos corantes artificiais, malto e nem conservantes!</p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_item_JCwmkt": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Qual o prazo de entrega?",
+            "content": "<p>O Viva Beauty é despachado em média de 24h úteis após aprovação do pagamento.</p><p><strong>Segue prazo médio para entrega:</strong></p><ul><li>Região Sudeste - de 1 a 8 dias úteis</li><li>Região Sul - de 1 a 9 dias úteis</li><li>Região Centro-Oeste - de 1 a 10 dias úteis</li><li>Região Nordeste - de 2 a 14 dias úteis</li><li>Região Norte - de 3 a 15 dias úteis</li></ul>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_item_pB6T8V": {
+          "type": "collapsible_item",
+          "settings": {
+            "icon": "none",
+            "heading": "Políticas de frete grátis",
+            "content": "<p>O FRETE GRÁTIS é válido apenas para pedidos acima de R$ 199,00 para os demais, será cobrado o valor fixo de R$ 9,90 para qualquer região do país.<br/><br/></p>",
+            "custom_liquid": "",
+            "page": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_item_t7UtgE",
+        "collapsible_item_AMx7Wd",
+        "collapsible_item_rUAHxc",
+        "collapsible_item_JCwmkt",
+        "collapsible_item_pB6T8V"
+      ],
+      "custom_css": [],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-9",
+        "header_layout": "vertical",
+        "heading": "Dúvidas Frequentes",
+        "heading_size": "h2",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "column_gap": "large",
+        "row_gap": "large",
+        "item_style": "card",
+        "item_color_scheme": "scheme-1",
+        "item_heading_font": "heading",
+        "item_heading_size": "h5",
+        "item_icon_size": "extra-large",
+        "padding_top": 60,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "multicolumn_kigFqr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_4XWnrK": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/Captura_de_tela_2025-07-11_082831.png",
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h6",
+            "text": "<p>A suplementação com colágeno é uma ótima forma de se cuidar! Apesar de ser uma proteína essencial amplamente...</p>",
+            "text_size": "text-base",
+            "button_label": "Saiba Mais",
+            "button_style": "btn--underline",
+            "button_link": "shopify://blogs/news/saiba-o-que-considerar-antes-de-comprar-colageno",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_GiUkLN": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/Captura_de_tela_2025-07-11_083112.png",
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h6",
+            "text": "<p>Você provavelmente já ouviu falar dos inúmeros benefícios do colágeno para a saúde do corpo, afinal, é uma proteína...</p>",
+            "text_size": "text-base",
+            "button_label": "Saiba Mais",
+            "button_style": "btn--underline",
+            "button_link": "shopify://blogs/news/existe-forma-correta-de-tomar-colageno-saiba-tudo",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_najziB": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify://shop_images/Captura_de_tela_2025-07-11_083809.png",
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h6",
+            "text": "<p>Os cuidados com a saúde da pele fazem parte da rotina de muitas pessoas que desejam manter a beleza e o bem-estar em...</p>",
+            "text_size": "text-base",
+            "button_label": "Saiba Mais",
+            "button_style": "btn--underline",
+            "button_link": "shopify://blogs/news/colageno-com-sabor-mais-saude-para-o-seu-paladar",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_4XWnrK",
+        "column_GiUkLN",
+        "column_najziB"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "left",
+        "columns_desktop": 3,
+        "column_gap": "large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_EE9tw8",
+    "slideshow_zTjT8g",
+    "feature_list_cW3d9c",
+    "featured_collection_mA8fzX",
+    "featured_collection_gfrVf9",
+    "featured_collection_EMDUAK",
+    "custom_liquid_dqg8W8",
+    "featured_collection_DQEXXL",
+    "featured_collection_fmDfkR",
+    "custom_liquid_YrfUzk",
+    "featured_collection_CtQ6MB",
+    "collapsible_tabs_KNKLiF",
+    "multicolumn_kigFqr"
+  ]
+}
