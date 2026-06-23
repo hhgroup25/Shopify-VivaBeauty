@@ -186,5 +186,7 @@
     j.parentNode.insertBefore(z, j);
   })(window, document, 'script', 'https://d3eq1zq78ux3cv.cloudfront.net/static/scripts/integration.min.js', '62f55d2526fa4b5a4e1470fb', 'MailbizIntegration');
   </script>
-  </body>
+  <!-- Não remova. Checkout Yampi. -->
+{% capture yampi_snippet_content %}{% include 'YampiSnippet' %}{% endcapture %} {% unless yampi_snippet_content contains 'Liquid error' %} {% include 'YampiSnippet' %} {% endunless %}
+<!-- Não remova. Checkout Yampi. --> </body>
 </html>
